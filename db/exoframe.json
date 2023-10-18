@@ -1,0 +1,10 @@
+{
+  "name": "ketpatel-message-database",
+  "domain": false,
+  "hostname": "ketpatel-message-database",
+  "image": "postgres:12",
+  "env": {
+    "POSTGRES_PASSWORD": "@ketpatel-postgres-password"
+  },
+  "volumes": ["ketpatel_message_database_volume:/var/lib/postgresql/data"]
+}
